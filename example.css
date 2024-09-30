@@ -1,0 +1,25 @@
+*{
+
+}
+ .box1{
+    background-color: rgb(214, 21, 21);
+    height: 200px;
+    width: 200px;
+ }
+ .box2{
+    background-color: blueviolet;
+    height: 200px;
+    width:200px;
+ }
+ .box3{
+    background : url(https://media.istockphoto.com/id/697120006/photo/amazing-cloudscape-on-the-sky.jpg?s=612x612&w=0&k=20&c=6GK5lZu6xbOpVBNw4tnyoMiu_O8JrD6Et1-TM2b6dqg=);
+    background-repeat: no-repeat;
+    height:200px;
+    width:200px;
+ }
+ .box4{
+    background: url(./assets/beach-2080075_640.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+ }
