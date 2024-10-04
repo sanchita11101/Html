@@ -1,0 +1,87 @@
+.box1{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(68, 127, 182);
+    border-radius: 2% solid black;
+}
+.a1{
+    height:100px;
+    width: 100px;
+    background-color: brown;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.box2{
+        height: 300px;
+        width: 300px;
+        background-color: rgb(68, 127, 182);
+        border-radius: 20% solid black;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+.a2{
+    
+        height:100px;
+        width: 100px;
+        background-color: brown;
+        
+}
+.box3{
+       height: 300px;
+        width: 300px;
+        background-color: rgb(68, 127, 182);
+        border-radius: 2% solid black;
+        display: flex;
+        align-items: start;
+        justify-content: flex-end;
+      }
+.a3{
+        height:100px;
+        width: 100px;
+        background-color: brown;
+       
+      }
+.box4{
+    height: 300px;
+        width: 300px;
+        background-color: rgb(68, 127, 182);
+        border-radius: 2% solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.a4{
+    height:100px;
+    width: 100px;
+    background-color: brown;
+}
+.box5{
+    height: 300px;
+        width: 300px;
+        background-color: rgb(68, 127, 182);
+        border-radius: 2% solid black;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+}
+.a5{
+    height:100px;
+    width: 100px;
+    background-color: brown;
+}
+.box6{
+    height: 300px;
+        width: 300px;
+        background-color: rgb(68, 127, 182);
+        border-radius: 2% solid black;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+}
+.a6{
+    height:100px;
+    width: 100px;
+    background-color: brown;
+}
