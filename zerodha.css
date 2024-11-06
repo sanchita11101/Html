@@ -1,0 +1,320 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.logo img
+{
+    height:18px;
+    margin-left: 200px;
+    
+}
+ul{
+    height:30px;
+    display: flex;
+    align-items:center;
+    /*background-color: rgb(140, 176, 176);*/
+    margin-right: 160px;
+    gap:45px;
+    font-size: 15px;
+    color: rgb(95, 90, 90);
+   
+    
+ }
+ .naubar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    border-bottom: 1px solid  rgb(221, 218, 218);
+    margin-bottom:60px;
+   
+    }
+
+.menu
+{
+        display:flex;
+        justify-content: center;
+        margin-left: 500px;
+    }
+
+.imgpart img
+{
+    height: 300px;
+}
+
+.imgpart
+{
+    /*background-color: black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+   }
+ .heading
+ {
+    /*background-color: aquamarine;*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+ }  
+.heading h1
+{
+    font-size:42px;
+    font-weight: 400;
+    color: rgba(59, 57, 57, 0.944);
+   
+}
+.heading p
+{
+    font-size:10px;
+    font-size: 24px;
+   
+}
+.buttan
+{
+    height: 50px;
+    width: 250px;
+   display:flex;
+   justify-content: center;
+   margin-top: 30px;
+   background-color: #387ed1;
+   border-radius: 5px;
+}
+.buttan h3
+{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.container
+{
+   height: 800px;
+   /*background-color: blueviolet;*/
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   gap:25px;
+  
+}
+.leftPart {
+    height: 100%;
+    width: 40%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(47, 47, 47, 0.934);
+  }
+
+.rightPart {
+    width: 40%;
+    height: 85%;
+    /* background-color: aqua; */
+}
+
+.description {
+    /* background-color: beige; */
+    height: 100px;
+    margin-bottom: 40px;
+    width: 60%
+}
+
+.leftPart h1 {
+    margin-bottom: 60px;
+    font-weight: 400;
+    /*background-color: blanchedalmond; */
+    width: 400px;
+   
+}
+
+.description h5 {
+    margin-bottom: 10.5px;
+    font-size: 22px;
+    font-weight: 600;
+ }
+
+
+.rightimg {
+    height: 500px;
+}
+
+.rightimg {
+     /*background-color: rgb(23, 163, 15);*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.option {
+    width: 100%;
+    height: 10%;
+    /* background-color: aquamarine; */
+    display: flex;
+    gap: 40px;
+    color: #387ed1;
+    font-weight: 500;
+
+}
+
+.option1 {
+    margin-left: 100px;
+
+}
+.presslogo{
+    /*background-color: blue;*/
+    height: 150px;
+    width: 1600px;
+  
+    display: flex;
+    margin-right: 500px;
+    
+}
+.presslogo img{
+    /*background-color: blueviolet;*/
+    height:40px;
+   
+}
+
+.itemgroup{
+    height: 300px;
+    /*background-color: rgb(43, 226, 217);*/
+    display: flex;
+      
+}
+.item{
+    height:300px;
+    width:350px;
+    /*background-color: blueviolet;*/
+    margin-left: 200px;
+}
+.item p{
+    color: rgb(53, 51, 51);
+}
+.item h4{
+    color: #387ed1;
+}
+.numbers{
+    height:300px;
+    width:700px;
+    /*background-color: #387ed1;*/
+    margin-left: 50px;
+    display: flex;
+  
+}
+.itemgroup h1{
+    height:40px;
+    color: rgb(73, 72, 72);
+   
+}
+.numimg{
+    display: flex;
+}
+.numimg img{
+    height:90px;
+}
+.numimg p{
+    font-size: 10px;
+    margin-top: 45px;
+ 
+}
+.varsity{
+    height:400px;
+    width:1600px;
+    /*background-color: #387ed1;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+.varsityimg
+{
+    height: 400px;
+    width: 600px;
+    /*background-color: blue;*/
+  
+  
+}
+.varsitycon{
+     height: 400px;
+    width: 500px;
+    /*background-color: rgb(65, 65, 93);*/
+    display: flex;
+    flex-direction: column;
+   
+}
+.varsityimg img{
+ height: 350px;
+}
+.varsitycon h1{
+   font-size: 25px;
+   color: rgb(74, 73, 73);
+}
+.varsitycon p{
+    line-height:30px;
+}
+.varsitycon h5{
+    color: #387ed1;
+}
+.ending{
+    height: 350px;
+    width:1600px;
+    background-color:rgb(246, 235, 235);
+    display: flex;
+    justify-content: center;
+}
+.endingitem{
+    /*background-color: blue;*/
+    height:300px;
+    width: 250px;
+
+}
+ 
+  
+
+.endingimg{
+    height:300px;
+    width: 300px;
+   /* background-color: #36414f;*/
+   
+}
+.endingitem ul{
+    height:200px;
+    width:200px;
+    /*background-color: aqua;*/
+    flex-direction: column;
+    gap:5px;
+ 
+}
+
+.endingimg img{
+    height:25px;
+}
+
+.endingitem h3{
+    font-weight: 40px;
+    font-size: 20px;
+    /*background-color: rgb(233, 17, 17);*/
+    display: flex;
+    justify-content: center;
+   
+}
+.endingitem p{
+    line-height: 30px;
+    font-size: 17px;
+}
+.paragraph{
+    height:1000px;
+    width: 1600px;
+    background-color:rgb(246, 235, 235);
+    
+}
