@@ -1,0 +1,179 @@
+.main{
+    height: fit-content;
+    width: fit-content;
+    /* background-color: aqua; */
+    animation-name: Circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+.circle{
+   height:200px ;
+   width: 200px;
+   background-color: rgb(226, 202, 43);
+   border-radius: 150px ;
+   border: 2px solid black;
+   position: relative;
+}
+@keyframes Circle{
+   0% {
+        transform: scale(150deg);
+        transform: rotate(360deg);
+    }
+}
+.cir {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(88, 19, 130);
+    border-radius: 50%;
+    position: absolute;
+    
+
+    
+}
+.b1{
+    left: 180px;
+    top: 100px;
+}
+.b2{
+    left: 80px;
+    top: -8px;
+}
+.b3{
+    top: 150px;
+}
+.word{
+    height: fit-content;
+    width: fit-content;
+    animation-name: Word;
+    animation-duration: 5s;
+    position: absolute;
+    animation-timing-function: linear;
+    position: relative;
+
+}
+@keyframes Word{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.box{
+    height: 70px;
+    width: 200px;
+    background-color: chocolate;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.box::after{
+    content: '';
+    height: 200px;
+    width: 220px;
+    background-color: blueviolet;
+    position: absolute;
+    transform: rotate(-35deg);
+    transition: 0.6s;
+    z-index: 1;
+}
+.box:hover::after{
+    transform: translate(-400px)rotate(-35deg);
+}
+.dot{
+    height: fit-content;
+    width: fit-content ;
+    display: flex;
+    gap: 30px;
+    /* animation-name: blackDot;
+    animation-duration: 1s;
+    position: absolute;
+    animation-timing-function: linear;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-name: blackDot1;
+    animation-name: blackDot2;
+     */
+
+}
+.a1{
+    animation-name:blackDot;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+.a2{
+    animation-name:blackDot1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+.a3{
+    animation-name:blackDot2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+.black{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 150px ;
+}
+
+@keyframes blackDot{
+    25%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes blackDot1{
+50%{
+    transform:scale(0) ;
+}
+100%{
+    transform: scale(1);
+}
+}
+@keyframes blackDot2{
+    75%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.space{
+    
+background: url(./colourful-cartoon-space-galaxy-background-free-vector.jpg);
+background-repeat: no-repeat;
+
+}
+.space2{
+    animation-name: Space;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Space{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translatey(40px);
+    }
+}
+
+
+
+ 
