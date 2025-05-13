@@ -1,0 +1,230 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  #root {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  
+  /* Sidebar with draggable elements */
+  .sidebar {
+    width: 130px;
+    background: #24292e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    user-select: none;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid #444c56;
+    padding-bottom: 0.5rem;
+  }
+  
+  .draggable {
+    background: #2f363d;
+    margin: 0.5rem 0;
+    padding: 0.65rem 0.75rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: grab;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .draggable:active {
+    cursor: grabbing;
+  }
+  
+  .draggable:hover {
+    background: #3f4a59;
+  }
+  
+  /* Canvas */
+  .canvas-container {
+    flex: 1;
+    background: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+  }
+  
+  .canvas-header {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #dedede;
+    font-weight: 700;
+    font-size: 1rem;
+    background: #f7f8fa;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .canvas {
+    flex: 1;
+    position: relative;
+    background: #e9ecef;
+    margin: 1rem;
+    border-radius: 6px;
+    min-height: 450px;
+    user-select: none;
+  }
+  
+  /* Elements inside canvas */
+  .canvas-element {
+    position: absolute;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: move;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    background: white;
+    transition: box-shadow 0.2s ease;
+    max-width: 280px;
+    word-wrap: break-word;
+  }
+  
+  .canvas-element.selected {
+    outline: 3px solid #3b82f6;
+    box-shadow: 0 0 12px #3b82f6aa;
+    z-index: 10;
+  }
+  
+  .canvas-element img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  
+  /* Properties panel */
+  .properties-panel {
+    width: 280px;
+    background: #fff;
+    border-left: 1px solid #dbdbdb;
+    padding: 1rem;
+    overflow-y: auto;
+    font-size: 0.9rem;
+  }
+  
+  .properties-panel h3 {
+    margin-top: 0;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #223344;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #555;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="url"],
+  select,
+  input[type="color"],
+  input[type="number"] {
+    width: 100%;
+    padding: 7px 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background: #3b82f6;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2563eb;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 900px) {
+    #root {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 0.5rem 0;
+    }
+    .draggable {
+      flex: 1 0 auto;
+      margin: 0 8px;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+    }
+    .canvas-container {
+      flex: 1 0 auto;
+      margin: 1rem 10px 10px 10px;
+    }
+    .properties-panel {
+      width: 100%;
+      border-left: none;
+      border-top: 1px solid #dbdbdb;
+      padding: 1rem 0.5rem 1rem 0.5rem;
+      font-size: 0.9rem;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .canvas {
+      margin: 0.5rem;
+      min-height: 380px;
+    }
+    .canvas-element {
+      max-width: 95%;
+      word-break: break-word;
+      padding: 6px 8px;
+      font-size: 0.9rem;
+    }
+    .properties-panel {
+      max-height: 250px;
+      font-size: 0.85rem;
+      padding: 0.8rem 0.5rem;
+    }
+  }
+  
+  
