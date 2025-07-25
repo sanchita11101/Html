@@ -1,0 +1,106 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #f8efff, #ffe6e6);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      width: 380px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-image {
+      position: relative;
+    }
+
+    .product-image img {
+      width: 250px;
+      height: 260px;
+      /* object-fit: cover; */
+      display: block;
+      margin-left: 60px;
+      /* margin-top: 60px; */
+    }
+
+    .discount-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #ff4d4d;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-details {
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .product-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #2ecc71;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .ratings {
+      color: #f1c40f;
+      margin-bottom: 18px;
+      font-size: 1.1rem;
+    }
+
+    .add-to-cart {
+      background: rgba(255, 109, 109, 0.95);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 6px 20px rgba(255, 109, 109, 0.4);
+    }
+
+    .add-to-cart:hover {
+      background: rgba(231, 76, 60, 0.95);
+      transform: scale(1.05);
+    }
