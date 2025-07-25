@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+
+}
+
+h1 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #b2ebf2;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #00acc1;
+  outline: none;
+}
+
+.input-group button {
+  padding: 12px 18px;
+  background-color: #00bfa5;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #008e76;
+}
+
+ul#taskList {
+  list-style-type: none;
+}
+
+li {
+  padding: 12px;
+  background: #f1f1f1;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #999;
+  background-color: #e0f2f1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button.edit, button.delete, button.complete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button.edit { color: #2196f3; }
+button.delete { color: #e53935; }
+button.complete { color: #43a047; }
+
+@media (max-width: 500px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
